@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ONIRICA — Agencia Multimedial</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="nav">
+    <div class="nav-logo">
+      <img src="images/logotexto.png" alt="ONIRICA">
+    </div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">Nosotros</a></li>
+      <li><a href="#works">Works</a></li>
+      <li><a href="#team">Team</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button id="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- 01 HOME -->
+  <section id="home">
+    <div id="hero-canvas-container" aria-hidden="true"></div>
+    <div class="hero-inner">
+      <h1 class="hero-brand">ESTUDIO MULTIMEDIAL</h1>
+      <p class="hero-slogan">Esto es lo que mejor hacemos</p>
+      <p class="hero-tag">Servicio Integral &nbsp;·&nbsp; Presencia constante &nbsp;·&nbsp; Entrega ordenada &nbsp;·&nbsp; </p>
+    </div>
+    <div class="strip">
+      <div class="ticker">
+        <span class="tick-item"><span>01</span>Fotografía Digital Profesional</span>
+        <span class="tick-item"><span>02</span>Fotografía Analógica Experimental</span>
+        <span class="tick-item"><span>03</span>Video Aftermovie y DJ Sets</span>
+        <span class="tick-item"><span>04</span>Shorts y Clips en Formato Vertical</span>
+        <span class="tick-item"><span>05</span>Visuales en Vivo</span>
+        <span class="tick-item"><span>06</span>Diseño y Desarrollo Web</span>
+        <span class="tick-item"><span>07</span>Creación de Marca y Rebranding</span>
+        <span class="tick-item"><span>01</span>Fotografía Digital Profesional</span>
+        <span class="tick-item"><span>02</span>Fotografía Analógica Experimental</span>
+        <span class="tick-item"><span>03</span>Video Aftermovie y DJ Sets</span>
+        <span class="tick-item"><span>04</span>Shorts y Clips en Formato Vertical</span>
+        <span class="tick-item"><span>05</span>Visuales en Vivo</span>
+        <span class="tick-item"><span>06</span>Diseño y Desarrollo Web</span>
+        <span class="tick-item"><span>07</span>Creación de Marca y Rebranding</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 02 ABOUT — Quiénes somos, canvas 3D (WEBGL) con el logo extruido -->
+  <section id="about">
+    <div class="reveal">
+      <span class="lbl">02 — Quiénes somos</span>
+      <h2 class="h1">Ojo que observa,<br>estudio que <em>construye.</em></h2>
+    </div>
+    <div class="rule"></div>
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p class="piece-desc">
+          Onírica es un estudio multimedial de Buenos Aires. Trabajamos fotografía,
+          video, diseño web y creación de marca para proyectos que necesitan presencia
+          constante y entrega ordenada, sin vueltas ni lenguaje de agencia genérica.
+        </p>
+        <p class="piece-desc">
+          El ojo es nuestra imagen de marca: mirada consciente, atención al detalle,
+          y la idea de que cada producción —sea una foto, un aftermovie o un sitio—
+          se construye pieza por pieza, nunca al azar. Por eso lo representamos acá
+          como el isotipo real de Onírica llevado a un volumen: el mismo trazado
+          exacto del logo, extruido en profundidad real (no una imagen ni una
+          textura) y con cámara ortográfica para que nunca se deforme al rotar.
+        </p>
+        <p class="piece-desc">
+          Detrás del estudio, un equipo chico que prefiere resolver todo el proceso:
+          desde la captura hasta la publicación.
+        </p>
+        <div class="tags">
+          <span class="tag">Fotografía</span>
+          <span class="tag">Video</span>
+          <span class="tag">Diseño Web</span>
+          <span class="tag">Identidad de Marca</span>
+          <span class="tag">WEBGL 3D</span>
+        </div>
+      </div>
+      <div class="canvas-wrap reveal">
+        <p class="canvas-hint" id="logo3d-hint">— Arrastrá para rotar la cámara · clic acá o tecla “M” para cambiar de modo —</p>
+        <div id="canvas-container"></div>
+        <p class="canvas-ft">Logo Onírica — extrusión 3D &nbsp;·&nbsp; P5.js / WEBGL &nbsp;·&nbsp; 2026</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 03 WORKS — pastillas de producción + canvas 2D con drag & drop -->
+  <main id="works">
+    <div class="reveal">
+      <span class="lbl">03 — Works</span>
+      <h2 class="h1">Producciones<br>multimediales.</h2>
+    </div>
+    <div class="rule"></div>
+
+    <div class="works-grid reveal" aria-label="Producciones y servicios de Onírica">
+      <article class="work-card" tabindex="0">
+        <img src="images/Artboard%201.webp" alt="Detalle de mixer y manos en una fiesta electrónica">
+        <div class="work-overlay">
+          <span class="work-kicker">Fotografía digital</span>
+          <h3>Maquinal Club</h3>
+          <p>Registro de cabina en Club Subsuelo, Palermo. Edición II — cobertura nocturna con foco en textura, manos y equipo.</p>
+        </div>
+      </article>
+
+      <article class="work-card" tabindex="0">
+        <video autoplay muted loop playsinline preload="metadata">
+          <source src="images/maquinal.mp4" type="video/mp4">
+        </video>
+        <div class="work-overlay">
+          <span class="work-kicker">Video aftermovie</span>
+          <h3>Maquinal Live</h3>
+          <p>Resumen audiovisual para fecha indoor en Galería Central, CABA. Edición III — montaje rítmico, color y entrega para redes.</p>
+        </div>
+      </article>
+
+      <article class="work-card" tabindex="0">
+        <img src="images/Artboard%202.webp" alt="Dos DJs en cabina con iluminación rosada y lente angular">
+        <div class="work-overlay">
+          <span class="work-kicker">Multicámara</span>
+          <h3>Subsuelo Sessions</h3>
+          <p>DJ set grabado con cobertura lateral y plano general. Edición I — registro de performance, cabina y clima del espacio.</p>
+        </div>
+      </article>
+
+      <article class="work-card" tabindex="0">
+        <img src="images/Artboard%203.webp" alt="Mano sobre consola con luces rojas y verdes">
+        <div class="work-overlay">
+          <span class="work-kicker">Clips verticales</span>
+          <h3>Pulse Room</h3>
+          <p>Microcontenidos para stories y reels en La Nave, Chacarita. Edición IV — cortes breves, detalle de equipo y movimiento.</p>
+        </div>
+      </article>
+
+      <article class="work-card" tabindex="0">
+        <img src="images/Artboard%204.webp" alt="Escenario oscuro con público y dos DJs bajo telas rojas">
+        <div class="work-overlay">
+          <span class="work-kicker">Cobertura integral</span>
+          <h3>Nocturna 909</h3>
+          <p>Foto y video para fiesta en Salón Mercurio, San Telmo. Edición V — registro de público, iluminación y puesta escénica.</p>
+        </div>
+      </article>
+
+      <article class="work-card" tabindex="0">
+        <video autoplay muted loop playsinline preload="metadata">
+          <source src="images/psdip31.mp4" type="video/mp4">
+        </video>
+        <div class="work-overlay">
+          <span class="work-kicker">DJ set completo</span>
+          <h3>PSDIP 31</h3>
+          <p>Registro extendido de cabina en Estación Norte, CABA. Edición XXXI — video sincronizado con audio y color final.</p>
+        </div>
+      </article>
+
+      <article class="work-card" tabindex="0">
+        <img src="images/Artboard%205.webp" alt="Retrato artístico con máscara e iluminación roja">
+        <div class="work-overlay">
+          <span class="work-kicker">Dirección de arte</span>
+          <h3>Ritual Visual</h3>
+          <p>Retrato editorial para performer en Casa Prisma, Villa Crespo. Edición II — estética roja, sombras fuertes y composición frontal.</p>
+        </div>
+      </article>
+
+      <article class="work-card" tabindex="0">
+        <img src="images/Artboard%206.webp" alt="Vista superior de una cabina DJ con dos performers y luces de escenario">
+        <div class="work-overlay">
+          <span class="work-kicker">Cobertura técnica</span>
+          <h3>Cabina 360</h3>
+          <p>Registro de setup completo en Terraza Fuga, Colegiales. Edición VI — planos cenitales, detalle de consola y dinámica entre DJs.</p>
+        </div>
+      </article>
+    </div>
+
+    <div class="canvas-wrap reveal works-canvas">
+      <div id="canvas-container-2"></div>
+      <p class="canvas-ft">Pieza interactiva &nbsp;·&nbsp; P5.js / Drag &amp; Drop &nbsp;·&nbsp; 2026</p>
+    </div>
+  </main>
+
+  <!-- 04 TEAM -->
+  <section id="team">
+    <div class="team-hdr reveal">
+      <div>
+        <span class="lbl">04 — Team</span>
+        <h2 class="h1">El equipo.</h2>
+      </div>
+      <span class="team-n">02</span>
+    </div>
+
+    <div class="team-duo reveal">
+      <div class="member">
+        <div class="member-circle">
+          <img src="images/juliana.webp" alt="Juliana">
+        </div>
+        <h3 class="mname">Juliana</h3>
+        <p class="mrole">Diseñadora Multimedial</p>
+        <p class="mbio">Diseñadora multimedial en formación, con experiencia en comunicación digital y producción de eventos.</p>
+      </div>
+      <div class="member">
+        <div class="member-circle">
+          <img src="images/arely.webp" alt="Arely">
+        </div>
+        <h3 class="mname">Arely</h3>
+        <p class="mrole">Diseñadora Integral · Creadora Audiovisual</p>
+        <p class="mbio">Diseñadora integral y creadora audiovisual. Fotografía y video pensados para mostrar los momentos justos en cada fecha.</p>
+      </div>
+    </div>
+
+    <div class="cursada reveal">
+      <p class="c-lbl-v">Datos de cursada</p>
+      <div class="c-data">
+        <div class="c-item"><label>Carrera</label>            <p>Diseño Multimedial</p></div>
+        <div class="c-item"><label>Materia</label>            <p>Diseño y Programación Web I</p></div>
+        <div class="c-item"><label>Año / Cuatrimestre</label> <p>2026 · Tercer cuatrimestre</p></div>
+        <div class="c-item"><label>Comisión</label>           <p>D</p></div>
+        <div class="c-item"><label>Turno</label>              <p>Mañana</p></div>
+        <div class="c-item"><label>Docente</label>            <p>Omar Toyos</p></div>
+        <div class="c-item"><label>Carácter de entrega</label><p>Segundo parcial</p></div>
+        <div class="c-item"><label>Integrantes</label>        <p>Meza Juliana · Arely · Valentino Rugnia</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 05 CONTACT -->
+  <section id="contact">
+    <span class="c-eye">05 — Contact</span>
+    <h2 class="c-big reveal">Hablemos.</h2>
+    <div class="c-vline"></div>
+    <a href="mailto:hola@onirica.ar" class="c-mail">hola@onirica.ar</a>
+    <div class="c-soc">
+      <a href="#">Instagram</a>
+      <a href="#">Behance</a>
+      <a href="#">LinkedIn</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="ft-data">
+      <span class="ft-item"><b>Carrera</b> Diseño Multimedial</span>
+      <span class="ft-item"><b>Materia</b> Diseño y Programación Web I</span>
+      <span class="ft-item"><b>Cuatrimestre</b> 2026 · Tercer cuatrimestre</span>
+      <span class="ft-item"><b>Turno</b> Mañana</span>
+      <span class="ft-item"><b>Comisión</b> D</span>
+      <span class="ft-item"><b>Docente</b> Omar Toyos</span>
+      <span class="ft-item"><b>Integrantes</b> Meza Juliana · Arely · Valentino Rugnia</span>
+    </div>
+    <div class="ft-brand">
+      <span class="ft">© 2026 ONIRICA — Agencia Multimedial</span>
+      <img src="images/logotexto.png" alt="ONIRICA" class="ft-logo">
+      <span class="ft">Diseño Multimedial · Da Vinci</span>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
+  <script src="https://unpkg.com/earcut@2.2.4/dist/earcut.min.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>
